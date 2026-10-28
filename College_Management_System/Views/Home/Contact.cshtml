@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Contact Page";
+}
+
+<!-- ================= PAGE BANNER ================= -->
+<section class="page-hero text-white position-relative overflow-hidden">
+    <img src="~/assets/images/building.webp" alt="Nexora college building and entrance lawn" class="page-hero-img position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+    <div class="page-hero-shade position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="container position-relative py-5">
+        <nav aria-label="breadcrumb" class="fade-up d1">
+            <ol class="breadcrumb mb-2 small">
+                <li class="breadcrumb-item"><a href="index.html" class="link-light link-underline-opacity-0">Home</a></li>
+                <li class="breadcrumb-item active text-gold" aria-current="page">Contact</li>
+            </ol>
+        </nav>
+        <h1 class="hero-title fade-up d2 mb-2">Contact Nexora</h1>
+        <p class="lead hero-lead fade-up d3 mb-0">We are here to help with your questions about admissions, academic programs, student services, and campus administration.</p>
+    </div>
+</section>
+
+
+<!-- ================= OFFICES ================= -->
+<section class="py-5 py-lg-6 pb-lg-4">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-sm-6 col-lg-3">
+                <div class="module-card card h-100 reveal" style="--i:0">
+                    <div class="card-body p-4">
+                        <span class="icon-box mb-3"><i class="bi bi-person-plus"></i></span>
+                        <h3 class="h6 fw-bold text-navy">Admissions Office</h3>
+                        <p class="small text-secondary mb-0">For program information and admission-related queries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="module-card card h-100 reveal" style="--i:1">
+                    <div class="card-body p-4">
+                        <span class="icon-box mb-3"><i class="bi bi-journal-bookmark"></i></span>
+                        <h3 class="h6 fw-bold text-navy">Academic Office</h3>
+                        <p class="small text-secondary mb-0">For course details, timetables, examinations, and academic records.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="module-card card h-100 reveal" style="--i:2">
+                    <div class="card-body p-4">
+                        <span class="icon-box mb-3"><i class="bi bi-headset"></i></span>
+                        <h3 class="h6 fw-bold text-navy">Student Support</h3>
+                        <p class="small text-secondary mb-0">For assistance with student portal access and campus services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="module-card card h-100 reveal" style="--i:3">
+                    <div class="card-body p-4">
+                        <span class="icon-box mb-3"><i class="bi bi-chat-dots"></i></span>
+                        <h3 class="h6 fw-bold text-navy">General Enquiries</h3>
+                        <p class="small text-secondary mb-0">Send us your question using the contact form, and the appropriate office can respond.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FORM + DETAILS ================= -->
+<section class="py-5 pt-lg-4 pb-lg-6">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5 h-100 reveal">
+                    <h2 class="section-title text-navy mb-1">Send us a message</h2>
+                    <div class="gold-rule mb-4"></div>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="cName" class="form-label fw-semibold">Full name</label>
+                                <input type="text" class="form-control" id="cName" required autocomplete="name">
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cEmail" class="form-label fw-semibold">Email</label>
+                                <input type="email" class="form-control" id="cEmail" required autocomplete="email">
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="cTopic" class="form-label fw-semibold">Topic</label>
+                                <select class="form-select" id="cTopic">
+                                    <option>Admissions</option>
+                                    <option>Academic programs</option>
+                                    <option>Examinations and results</option>
+                                    <option>Fees and payments</option>
+                                    <option>Student portal support</option>
+                                    <option>General enquiry</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="cMsg" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control" id="cMsg" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please write your message.</div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-warning btn-lg btn-shine fw-semibold px-5">Send message</button>
+                            </div>
+                            <div class="col-12"><div class="alert alert-success d-none mb-0" id="contactOk" role="status"></div></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="d-grid gap-4">
+                    <div class="bg-white rounded-4 shadow-sm p-4 reveal reveal-right">
+                        <h2 class="h5 fw-bold text-navy mb-3">Campus details</h2>
+                        <ul class="list-unstyled d-grid gap-3 mb-0">
+                            <li class="d-flex gap-3"><span class="icon-box icon-sm flex-shrink-0"><i class="bi bi-geo-alt"></i></span><span>Nexora Institute of Science &amp; Technology<br>Green Valley Campus, 123 Education Road, Shivpur, Bhopal - 462001</span></li>
+                            <li class="d-flex gap-3"><span class="icon-box icon-sm flex-shrink-0"><i class="bi bi-envelope"></i></span><span class="align-self-center">info@nexora.edu.in</span></li>
+                            <li class="d-flex gap-3"><span class="icon-box icon-sm flex-shrink-0"><i class="bi bi-telephone"></i></span><span class="align-self-center">+91 98765 43210</span></li>
+                        </ul>
+                        <p class="small text-secondary mt-3 mb-0">Demo details. Add verified contact details before publishing the website.</p>
+                    </div>
+                    <div class="bg-white rounded-4 shadow-sm p-4 reveal reveal-right" style="--i:1">
+                        <h2 class="h5 fw-bold text-navy mb-3"><i class="bi bi-clock me-2 text-gold-deep"></i>Office hours</h2>
+                        <table class="table table-borderless align-middle mb-0">
+                            <tbody>
+                                <tr><td class="ps-0">Monday to Friday</td><td class="text-end pe-0 fw-semibold">9:30 AM &ndash; 4:30 PM</td></tr>
+                                <tr><td class="ps-0">Saturday</td><td class="text-end pe-0 fw-semibold">9:30 AM &ndash; 1:00 PM</td></tr>
+                                <tr><td class="ps-0">Sunday</td><td class="text-end pe-0 text-secondary">Closed</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small text-secondary mt-2 mb-0">Suggested demo values, not verified opening hours.</p>
+                    </div>
+                    <figure class="gallery-tile rounded-4 overflow-hidden m-0 reveal reveal-right" style="--i:2;aspect-ratio:16/9;height:auto"><img src="~/assets/images/nexora-building.webp" alt="Campus cricket ground with hills in the background" class="w-100 h-100 object-fit-cover" loading="lazy"></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

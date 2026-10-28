@@ -1,0 +1,48 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# Visual Studio Code (optional)
+.vscode/
+
+# JetBrains Rider (optional)
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Logs
+*.log
+
+# Test results / coverage
+TestResults/
+coverage/
+
+# Publish output
+publish/
+*.publishsettings
+
+# ASP.NET Core User Secrets
+secrets.json
+
+# Environment files
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
