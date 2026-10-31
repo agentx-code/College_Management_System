@@ -48,7 +48,7 @@
                         Student Portal <span aria-hidden="true">&rarr;</span>
                     </a>
                     <a asp-action="About" asp-controller="Home" asp-fragment="programs" class="btn btn-outline-light btn-lg px-4">Explore Programs</a>
-                    <a href="contact.html"
+                    <a href="@Url.Action("Contact", "Home")"
                        class="link-light link-underline-opacity-25 link-underline-opacity-100-hover fw-medium">
                         Contact Admissions
                     </a>
@@ -93,12 +93,12 @@
                                     <div class="carousel-caption text-start"><span>Sports and Recreation</span></div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+                            @* <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
-                            </button>
+                            </button> *@
                         </div>
                     </div>
 
